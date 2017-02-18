@@ -1,0 +1,19 @@
+﻿body {
+    background-color: black;
+}
+
+button {
+    color: red;
+    background-color: orange;
+    border: double;
+    border-color: yellow;
+}
+
+.log-block {
+    background-color: black;
+    color: red
+}
+
+.output {
+    color:saddlebrown;
+}

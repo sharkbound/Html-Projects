@@ -3,5 +3,14 @@
     <title>Title of HTML</title>
 </head>
 <body>
-    <h1>LARGE TEXT</h1>
+    <div style="align-content:center">
+        <h1>type to change me...</h1>
+    </div>
+    <br />
+    <div style="align-content:center">
+        <input id="input1" type="text" onforminput="$('h1').text(this.Text)"/>
+        <button id="btn1" type="button" onclick="$('h1').text('changed')">btn1</button>
+    </div>
 </body>
+<script type="text/javascript" src="Script1.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>

@@ -12,6 +12,6 @@ function getTxt(id) {
 }
 
 function setLableText() {
-    setTxt('change', getTxt('textInput'))
+    setTxt('change', getTxt('textInput'));
     //document.getElementById('change').innerText = 'changed!';
 }
