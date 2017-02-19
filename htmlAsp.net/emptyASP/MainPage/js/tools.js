@@ -7,6 +7,14 @@ function getText(id) {
     return $(id).text();
 }
 
+function setHtml(id, newHtml) {
+    $(id).html(newHtml);
+}
+
+function getHtml(id) {
+    return $(id).html();
+}
+
 function addText(id, text) {
     $(id).text($(id).text() + text);
 }

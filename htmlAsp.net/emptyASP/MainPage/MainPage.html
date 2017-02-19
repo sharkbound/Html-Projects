@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <title>Main Page</title>
-    <link rel="stylesheet" href="../css/Style.css" />
+    <link rel="stylesheet" href="css/Style.css" />
 
     <script src="../Scripts/jquery-3.1.1.min.js"></script>
     <script src="js/keyboard-tools.js"></script>
@@ -12,12 +12,12 @@
 <body onload="ConnectKeyPressHandler();">
     <p style="align-content:center; text-align:center; align-items:center">
         <button type="button" onclick="clearText('#output-log')">reset text</button>
+        <button type="button" onclick="setText('#Keypress-log', 'Keypress log:')">reset key log</button>
         <button type="button" onclick="addText('#output-log', '--->');">add text</button>
-        <input type="text" onchange="$(this).text('type anything');" placeholder="Type anything"/>
-        <input id="focus-input" type="checkbox" onchange="toggleBool('focus');"/>
-        <!--<button type="button" onclick="move();">h2</button>-->
+        <input id="text-input" type="text" placeholder="Type anything"/>
 
         <h1 id="keylog" class="log-block"></h1>
+        <h1 id="keylog-char" class="log-block"></h1>
         <h1 id="typelog" class="log-block"></h1>
         <h1 id="output-log" class="output"></h1>
         <h3 id="keypress-log" class="output">Keypress Log: </h3>

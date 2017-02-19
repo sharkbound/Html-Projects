@@ -2,7 +2,7 @@
     background-color: black;
 }
 
-button {
+.neon-btn {
     color: red;
     background-color: orange;
     border: double;
