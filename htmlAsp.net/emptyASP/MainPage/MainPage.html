@@ -13,6 +13,8 @@
     <p style="align-content:center; text-align:center; align-items:center">
         <button type="button" onclick="clearText('#output-log')">reset text</button>
         <button type="button" onclick="addText('#output-log', '--->');">add text</button>
+        <input type="text" onchange="$(this).text('type anything');" placeholder="Type anything"/>
+        <input id="focus-input" type="checkbox" onchange="toggleBool('focus');"/>
         <!--<button type="button" onclick="move();">h2</button>-->
 
         <h1 id="keylog" class="log-block"></h1>
