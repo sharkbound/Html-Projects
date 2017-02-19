@@ -8,7 +8,7 @@ function ConnectKeyPressHandler() {
         $("#typelog").text('Event Type: ' + e.type);
 
         if (requireTextInputFocus && !$('#focus-input').is(':focus')) return;
-        logKeyPress(e.which);
+        logKeyPress(codeToChar(e.which));
 
         switch (e.which) {
             case 1:
@@ -26,11 +26,16 @@ function toggleBool(variable) {
 }
 
 function logKeyPress(key) {
+
     if (firstPress) {
         addText(keyPressLog, key);
         firstPress = false;
     }
     else {
-        addText(keyPressLog, ', ' + key);
+        addText(keyPressLog, ', ' + key + '');
     }
+}
+
+function codeToChar(code) {
+    return String.fromCharCode(code);
 }
